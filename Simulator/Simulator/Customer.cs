@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Simulator
 {
-    public class Class1
+    public struct Customer : IHasID
     {
+        public Guid ID;
+
+        Guid IHasID.ID => ID;
     }
 }
